@@ -38,12 +38,13 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
   ],
+  serverMiddleware: ['~/api/index'],
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   '@nuxt/http'
   ],
   http: {
-    baseURL: 'https://xhostcom.site.strattic.io/wp-json/wp/v2/', // Used as fallback if no runtime config is provided
+    baseURL: 'https://jsonplaceholder.typicode.com/', // Used as fallback if no runtime config is provided
     proxy: false,
     mode: 'no-cors' // no-cors,
    },
